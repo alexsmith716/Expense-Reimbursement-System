@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="stylesheet" href="./styles/styles.css" />
+		<title>Expense Reimbursement System</title>
+	</head>
+
+	<body>
+
+		<div class="container">
+
+			<div class="contentContainer"> 
+				<div class="subContainer header">
+					<h1>Expense Reimbursement System</h1>
+					<br>
+					<h2>Employee Portal</h2>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<div class="subContainer logIn">
+					<table class="tableBorder">
+						<tr>
+							<th>Type</th>
+							<th>Date</th>
+							<th>Amount</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>
+								<select id="type" name="dropdown">
+									<option value=1>LODGING</option>
+									<option value=2>FOOD</option>
+									<option value=3>TRAVEL</option>
+									<option value=4>OTHER</option>
+								</select>
+							</td>
+							<td><input type="text" id="date" name="date"></td>
+							<td><input type="text" id="amount" name="amount"></td>
+							<td><input type="text" id="description" name="description"></td>
+						</tr>
+					</table>
+					<br>
+					<button id="submit" class="btn submitBG">Submit</button>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<div id="reimbursements" class="subContainer logIn">
+					<table class="tableBorder">
+						<thead>
+							<tr>
+								<th>Reimbursement ID</th>
+								<th>Date</th>
+								<th>Type</th>
+								<th>Amount</th>
+								<th>Description</th>
+								<th>Status</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="contentContainer">
+				<div class="subContainer">
+					<button id="logout" class="btn logoutBG">Logout</button>
+				</div>
+			</div>
+
+		</div>
+
+		<script src="./scripts/employee.js"></script>
+		<script type="module">
+			import './scripts/logout.js';
+		</script>
+	</body>
+</html>

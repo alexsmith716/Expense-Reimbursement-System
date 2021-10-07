@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	padding-top: 20px;
+	margin: 0;
+	line-height: 1;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.contentContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.subContainer {
+	border-radius: 20px;
+	text-align: center;
+	padding: 20px 20px;
+	margin-bottom: 40px;
+}
+
+.header {
+	background: #FAFAD2;
+}
+
+.logIn {
+	background: #eeeeee;
+}
+
+.alignContentCenter {
+	align-content: center;
+}
+
+.alignTextCenter {
+	text-align: center;
+}
+
+.btn {
+	height: 36px;
+	border-radius: 8px;
+	color: #fff;
+	border: none;
+	font-size: 20px;
+	padding: 8px 8px;
+	cursor: pointer;
+}
+
+.logoutBG {
+	background: #000080;
+}
+
+.submitBG {
+	background: #2da44e;
+}
+
+.tableBorder {
+	border:1px solid black;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #cccccc;
+}
+
+.failedLogin {
+	color: #DC143C;
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+table, th, td {
+	border: 1px solid black;
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+}
+
+input {
+	font-size: 16px;
+}
